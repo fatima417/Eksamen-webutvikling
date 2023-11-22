@@ -1,124 +1,269 @@
 *{
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family:Arial, Helvetica, sans-serif;
   }
 
-  #grid-container{
-  display: grid;
-  grid-template-areas: "header" "main" "footer";
-  }
-  
-  body {
-  margin: 0;
-  padding: 0;
-  }
-
-  main{
-    display: grid;
-    grid-area: main;
-    align-items: center;
-  }
-
-  header{
-    position: relative;
-  }
-
-  video{
-    display: block;
-    background-size: 100px;
-    height: auto;
-    margin: 100px;
-    padding: 100px;
-    max-width: 100%;
-    z-index: -0;
-
-  }
-  nav{
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 20px 8%;
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
-  }
-
-  nav.logo{
-  width: 70px;
-  position:fixed;
-  }
-
-  nav ul li a{
-  color: black;
-  font-size: 17px;
-  text-decoration: none;
-
-  }
-  nav ul li{
-  list-style: none;
-  display: inline-block;
-  margin-left: 40px;
-  }
-
-  .text-overlay{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black; 
-    text-align: center;
-  }
-
-  .smartphone{
-    position:relative;
-    top: 50%;
-   text-align: right;
-  }
-
-  #text-design{
-    text-align: center;
-  }
-  
-  .headline{
-   font-size: larger;
-  }
-  
-
- .button{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: yellow;
-    font-size: 15px;
-    padding: 9px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  .button .btn:hover {
-    background-color: black;
-  }
-
-  footer{
-    background-color: grey;
-    color: #fff;
-    text-align: center;
-    grid-area: footer;
-    display: grid;
-  }
-
-.google-maps{
-  width: 640px;
-  height: 480px;
-  padding: 30px;
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+background-color: #fff;
 }
-  @media only screen and (min-width: 600px) {
-    #grid-container{
-      grid-template-areas: "header header header" "main main main" "footer footer footer";
-    }
+
+
+header {
+position: relative;
+}
+
+.logo{
+height: 700;
+}
+
+#background-video::before {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100;
+background: rgba(0, 0, 0, 0.5); 
+opacity: 0.7;
+}
+
+.container {
+height: auto;
+background-size: cover; 
+margin: 40px 0;
+left: 0; 
+opacity: 0.7;
+margin-top: 5%;
+padding: 5px;
+}
+  
+
+.text-overlay {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white; 
+}
+
+.text-overlay h1 {
+font-size: 2em; 
+}
+
+.text-overlay p {
+font-size: 1.2em; 
+}
+
+.text-overlay button {
+font-size: 1.5em; 
+padding: 10px 20px;
+background-color: #e6bd43;
+color: black;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+nav {
+text-align: center;
+padding: 10px;
+text-align: right;
+color: black;
+font-size: 17px;
+text-decoration: none;
+}
+
+nav ul {
+padding: 0;
+list-style: none;
+}
+
+nav ul li {
+display: inline-block;
+margin: 10px;
+}
+
+nav ul li a{
+color: black;
+font-size: 17px;
+text-decoration: none;
+}
+
+.home{
+text-decoration: underline;
+text-decoration-color: #e6bd43;
+text-decoration-thickness: auto;
+font-weight: bold;
+border-bottom: 2px;
+}
+
+.contact{
+background-color: #e6bd43;
+border: none;
+padding: 15px 32px;
+display: inline-block;
+font-size: 15px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.engaging-heading{
+font-size: 50px;
+}
+
+main{
+display: grid;
+grid-area: main;
+align-items: center;
+text-align: center; 
+}
+
+
+.image-placeholder {
+max-width: 19%; 
+float: left; 
+border-radius: 10px;
+border-color: #e6bd43;
+margin-right: 15px;
+object-fit: cover;
+height: auto;
+}
+
+#text{
+text-align: left;
+}
+
+.text-box {
+padding: 30px; 
+border: 4px solid #e6bd43;
+background-color: #e6bd43;
+border-radius: 10px;
+object-fit: cover;
+}
+
+#heading2{
+text-align: left;
+}
+
+
+.text-box h2{
+font-size: 42px;
+}
+
+.text-box p{
+font-size: 16px;
+}
+
+.heading{
+font-size: 20px;
+text-align: center;
+}
+
+.sec1{
+width: 33.33%;
+float: left;
+text-align: center;
+padding: 0px 50px;
+margin: 20px;
+}
+
+.sec2{
+width: 33.33%;
+float: right;
+text-align: center;
+padding: 0px 50px;
+margin: 20px;
+}
+
+
+.sec3{
+width: 33.33%;
+float: right;
+text-align: center;
+padding: 0px 50px;
+margin: 20px;
+}
+
+.clients{
+border: 4px solid #e6bd43;
+background-color: #e6bd43;
+}
+
+.container-box {
+flex: 1;
+margin: 10px;
+padding: 20px;
+}
+
+.img-pic{
+width: 80px;
+object-fit: cover;
+height: 100%;
+}
+
+article {
+  text-align: left;
+}
+
+.text-overlay.portfolio{
+  text-align: center;
+}
+
+.technology-img{
+ max-width: 100%;
+ object-fit: cover;
+ opacity: verdi;
+ position: relative;
+ left: 0;
+ top: 0;
+ right: 0;
+ bottom: 0;
+
+}
+
+
+
+
+
+/* Text overlay styles */
+.text-overlay {
+  font-size: 18px;
+  color: black;
+}
+
+/* Footer styles */
+footer {
+  background-color: black;
+  padding: 20px 5%; /* Adjust padding for smaller screens */
+  text-align: center;
+}
+
+.google-maps {
+  width: 100%; /* Make Google Maps responsive */
+  height: auto;
+  padding: 15px; /* Adjust padding for smaller screens */
+}
+
+/* Responsive media queries */
+@media only screen and (max-width: 768px) {
+  #grid-container {
+    grid-template-areas: "header" "main" "footer";
   }
+
+  nav {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .text-box {
+    padding: 10px; /* Further adjust padding for smaller screens */
+  }
+}

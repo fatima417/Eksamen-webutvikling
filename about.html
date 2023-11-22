@@ -4,48 +4,63 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/f0cec0541e.js" crossorigin="anonymous"></script>
+        <meta name="description" content="your website description here">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <title>about</title>
     </head>
     <body>
         <div id="grid-container">
             <header>
+                <section class="logo">
+                    <img src="css/img/logo1.png"  alt="picture of a logo">
+                 </section>
                 <nav class="flex">
-                    <img src="css/img/logo3.png" class="logo" alt="picture of a logo">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="home"><a href="index.html">Home</a></li>
+                        <li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="about"><a href="about.html">About</a></li>
+                        <li class="contact"><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <section class="flex">
-                    <article class="smartphone">
-                        <h2> Company name</h2>
-                        <h3>About our company</h3>
-                        <p id="text-design">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    <img src="css/img/smartphone.jpg" alt="picture for the header">
-                    </article>
-                </section>
+                <img src="css/img/computer.jpg" alt="picture of a computer">
             </header>
             <main>
-                <section>
-                    <h2>Our services</h2>
-                    <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <h3>Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <h3>Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <h3>Support</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </section>
-            <section>
-                    <article>
+                <section class="container-box">
+                    <article class="sec1">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </article>
+                </section>
+                <section class="container-box">
+                    <article class="sec2">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </article>
+                </section>
+            
+                <section class="container-box">
+                    <article class="sec3">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </article>
+                </section>
+            
+                <section class="container-box">
+                    <article class="sec4">
+                        <i class="fa-solid fa-wifi"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </article>
+                </section>
+            <section class="flex">
+                    <article class="clients">
                         <h1>Some of our clients</h1>
-                        <img src="css/img/logo1.png" alt="logo picture"> 
-                        <img src="css/img/logo2.png" alt="logo in the picture">
-                        <img src="css/img/logo3.png" alt="logo in the picture">
+                        <img src="css/img/logo1.png" class= logo-pic alt="logo picture"> 
+                        <img src="css/img/logo2.png" class= logo-pic alt="logo in the picture">
+                        <img src="css/img/logo3.png" class= logo-pic alt="logo in the picture">
                     </article>
             </section>
             <section>
@@ -70,13 +85,13 @@
                         <button onlclick="window.location.href='';">Send message</button>
                     </article>
             </section>
-            <section>
+            <section class="flex">
                     <article>
                         <h3>Contact information</h3>
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>        
                     </article>
             </section>
-            <section>
+            <section class="flex">
                     <article>
                         <ul>
                             <i class="fa-solid fa-location-pin"></i>
@@ -101,7 +116,7 @@
             </p>
             </main>       
             <footer>
-                <section>
+                <section class="flex"> 
                     <article>
                         <img src="css/img/logo3.png" class="logo" alt="picture of a logo">
                     </article>

@@ -3,31 +3,42 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Fatima Ahmad">
+        <meta name="description" content=" company eos et accusamus et iusto odio dignissimos">
+        <!--Facebook metadata-->
+        <meta property="og:title" content="company">
+        <meta property="og:url" content="https://schema.org/AggregateRating">
+        <meta property="og:description" content="company eos et accusamus et iusto odio dignissimos">
+        <meta property="og:image" content=""> <!--sett inn en bilde-->
+        <!--Other meta data-->
+        <meta name="description" content="Your website description here">
         <script src="https://kit.fontawesome.com/f0cec0541e.js" crossorigin="anonymous"></script>
         <meta name="description" content="your website description here">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <title>Forside</title>
     </head>
-    <body>
+    <body itemscope itemtype="https://schema.org/WebPage">
         <div id="grid-container">
-            <header>
+            <header itemprop="headline">
+                <section class="logo">
+                    <img src="css/img/logo1.png"  alt="picture of a logo">
+                 </section>
                 <nav class="flex">
-                    <img src="css/img/logo3.png" class="logo" alt="picture of a logo">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="home"><a href="index.html">Home</a></li>
+                        <li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="about"><a href="about.html">About</a></li>
+                        <li class="contact"><a href="#">Contact</a></li>
                     </ul>
                 </nav>
                 <section class="flex">
                     <article class="container">
-                        <video autoplay muted loop>
+                        <video autoplay muted loop id="background-video">
                             <source src="css/img/mountains.mp4" type="video/mp4">
                         </video>
                     </article>
                 </section>
-                <section>
+                <section class="section">
                     <article class="text-overlay">
                         <h1 class="headline">Compeling headline</h1>
                         <br>
@@ -35,33 +46,61 @@
                          lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                        </p>
                        <br>
-                       <button class="button" onclick="window.location.href='our services'">Read more about our service</button>
+                       <button class="color-change-button">Read more about us</button>
+                    </article>
+                </section>    
+            </header>
+            <main itemscope itemtype="https://schema.org/Product">
+               <section class="flex">
+                  <article>
+                     <h1 id="engaging-heading">Engaging subheading. What can you help your visitors with</h1>
+                     <br>
+                     <p id="text">lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                  </article>
+               </section>
+               <section class="flex">
+                 <article class="wrapper">
+                     <img class="image-placeholder" src="https://placehold.co/400x400" alt="placeholder picture">
+                 </article>
+                  <section class="text-box">
+                     <h2 id="heading2">About our company</h2>
+                     <br>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                     <br>
+                     <button class="about-button">Read more about us</button>
+                  </section>
+                </section>
+                <section class="container-box">
+                    <article class="sec1">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     </article>
                 </section>
-            </header>
-            <main>
-             <section class="flex">
-                 <h1>Enganging subheading. What can you help your visitors with</h1>
-                 <p>lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-             </section>
-             <section class="About-company">
-                  <h1>About our company</h1>
-                  <img src="https://placehold.co/600x400" alt="placeholder picture">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <button onclick="window.location.href='';">Read more about us</button>
-               </section>
-                <section>
-                  <h2>Our services</h2>
-                  <h3>Branding</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  <h3>Design</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  <h3>Development</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  <h3>Support</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <section class="container-box">
+                    <article class="sec2">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </article>
                 </section>
-                <section>
+            
+                <section class="container-box">
+                    <article class="sec3">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </article>
+                </section>
+            
+                <section class="container-box">
+                    <article class="sec4">
+                        <i class="fa-solid fa-wifi"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </article>
+                </section>
+                <section class="flex">
                     <h2>Sign up for our newsletter</h2>
                     <form action="/search bar" method="get">
                         <input type="text" name="q" placeholder="search">
@@ -69,21 +108,20 @@
                     </form>
                </section>
             </main>
-            <footer>
-                <section>
-                    <article>
+            <footer itemprop="copyrightHolder">
+                <section class="flex">
+                    <article class="logo-footer">
                         <img src="css/img/logo3.png" class="logo" alt="picture of a logo">
                     </article>
-                    <p>Company copyright 2023</p>
-                    <article>
+                    <p id="company-copyright">Company copyright 2023</p>
+                    <article class="socials">
                         <ul>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Linkin</a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <li><a href="#"><i class="fa-brands fa-linkin"></i></a></li>
                         </ul>
                     </article>
                 </section>
             </footer>
-        </div>
     </body>
 </html>
