@@ -3,32 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Fatima Ahmad">
+        <meta name="description" content=" company eos et accusamus et iusto odio dignissimos">
+        <!--Facebook metadata-->
+        <meta property="og:title" content="company">
+        <meta property="og:url" content="https://schema.org/AggregateRating">
+        <meta property="og:description" content="company eos et accusamus et iusto odio dignissimos">
+        <meta property="og:image" content=""> <!--sett inn en bilde-->
+        <!--Other meta data-->
         <script src="https://kit.fontawesome.com/f0cec0541e.js" crossorigin="anonymous"></script>
-        <meta name="description" content="your website description here">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>portfolio</title>
+        <title>Portfolio</title>
     </head>
-    <body>
+    <body itemscope itemtype="https://schema.org/WebPage">
         <div id="grid-container">
-            <header>
+            <header itemprop="headline">
                 <section class="logo">
                     <img src="css/img/logo1.png"  alt="picture of a logo">
                  </section>
-                <nav class="flex">
+                <nav>
                     <ul>
                         <li class="home"><a href="index.html">Home</a></li>
-                        <li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-                        <li class="about"><a href="about.html">About</a></li>
-                        <li class="contact"><a href="#">Contact</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <section class="flex">
-                    <article class="text-overlay-portfolio">
-                        <h1 class="headline">Portfolio</h1>
-                        <img src="css/img/desk.jpg" class="technology-img" alt="picture for the header"> 
+                <section class="flex-tech">
+                    <article>
+                        <img src="css/img/tech.jpg" class="tech-img" alt="picture for the header"> 
                     </article>
                 </section>
-                <section>
+                <section class="flex"> 
+                    <article class="text-overlay">
+                        <h1 class="headline">Portfolio</h1>
+                    </article>
+                </section>
+                <section class="flex">
                     <article>
                         <h1 id="explore-previous-jobs">Explore previous jobs</h1>
                         <h5>Branding</h5>
@@ -61,22 +72,22 @@
                     </article>
                 </section>
             </main>
-            <footer>
+            <footer itemprop="copyrightHolder">
                 <section>
-                    <article>
+                    <article class="logo-footer">
                         <img src="css/img/logo3.png" class="logo" alt="picture of a logo">
                     </article>
-                    <p>Company copyright 2023</p>
-                    <article>
+                    <p id="company-copyright">Company copyright 2023</p>
+                    <article class="socials">
                         <ul>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Linkin</a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <li><a href="#"><i class="fa-brands fa-linkin"></i></a></li>
                         </ul>
                     </article>
                 </section>
-            </footer>
-        </div>
-    </body>
-    </html>
-       
+            </footer> 
+      </div>     
+   </body>
+</html>
+               

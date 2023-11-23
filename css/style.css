@@ -1,43 +1,37 @@
 *{
-  box-sizing: border-box;
-  }
+box-sizing: border-box;
+}
 
 body {
-margin: 0;
-padding: 0;
 font-family: Arial, sans-serif;
-background-color: #fff;
+background-color:#fff;
 }
 
-
-header {
-position: relative;
+html,body{
+  height: 100%;
+  margin:0;
 }
 
-.logo{
-height: 700;
+header{
+  background-color: white;
+  display: grid;
+  grid-area: header;
+  align-items: center;
+  position: relative;
 }
 
-#background-video::before {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100;
-background: rgba(0, 0, 0, 0.5); 
-opacity: 0.7;
+.logo img{
+  max-height: 100px;
 }
 
-.container {
-height: auto;
-background-size: cover; 
-margin: 40px 0;
-left: 0; 
-opacity: 0.7;
-margin-top: 5%;
-padding: 5px;
+.flex{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh; 
+overflow: hidden;
+
 }
-  
 
 .text-overlay {
 position: absolute;
@@ -45,17 +39,18 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 text-align: center;
-color: white; 
+color: black; 
+margin-top: 10%;
 }
-
+  
 .text-overlay h1 {
 font-size: 2em; 
 }
-
+  
 .text-overlay p {
 font-size: 1.2em; 
 }
-
+  
 .text-overlay button {
 font-size: 1.5em; 
 padding: 10px 20px;
@@ -68,29 +63,33 @@ cursor: pointer;
 
 nav {
 text-align: center;
-padding: 10px;
+padding: 20px;
 text-align: right;
 color: black;
 font-size: 17px;
-text-decoration: none;
+text-decoration: solid;
+margin-bottom: 20px;
+display: inline-block;
 }
-
+  
 nav ul {
 padding: 0;
 list-style: none;
 }
-
+  
 nav ul li {
+margin-right: 15px;
 display: inline-block;
-margin: 10px;
+margin-right: 10px;
+margin-bottom: 10px;
 }
-
+  
 nav ul li a{
 color: black;
 font-size: 17px;
 text-decoration: none;
 }
-
+  
 .home{
 text-decoration: underline;
 text-decoration-color: #e6bd43;
@@ -99,20 +98,85 @@ font-weight: bold;
 border-bottom: 2px;
 }
 
-.contact{
-background-color: #e6bd43;
-border: none;
-padding: 15px 32px;
-display: inline-block;
-font-size: 15px;
-font-weight: bold;
-cursor: pointer;
+.nav-button {
+  border: none;
+  color: #d4ac3f;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: solid;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
+
+.nav-button:hover {
+  background-color: #333;
+  color: #d4ac3f; 
+}
+
+
+  
+/* mountains.png video css*/
+.flex-banner {
+  position: relative;
+  height: 70vh; /* Set the height to cover the entire viewport */
+  overflow: hidden; /* Hide any overflow beyond the viewport */
+  opacity: 0.5;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 100%; /* Make the video cover the entire container */
+  height: 100%;
+  object-fit: cover; /* Ensure the video maintains its aspect ratio and covers the container */
+}
+
 
 .engaging-heading{
-font-size: 50px;
+font-size: 70px;
 }
 
+.tech-img{
+position: relative;
+object-fit: cover;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #d4ac3f;
+}
+
+.button1:hover{
+  background-color: #333;
+  color: #d4ac3f; 
+}
+  
 main{
 display: grid;
 grid-area: main;
@@ -120,150 +184,221 @@ align-items: center;
 text-align: center; 
 }
 
-
-.image-placeholder {
-max-width: 19%; 
-float: left; 
-border-radius: 10px;
-border-color: #e6bd43;
-margin-right: 15px;
-object-fit: cover;
-height: auto;
+/* main css*/
+.section {
+  overflow: hidden; /* Clear the float */
 }
 
-#text{
-text-align: left;
-}
-
-.text-box {
-padding: 30px; 
-border: 4px solid #e6bd43;
-background-color: #e6bd43;
-border-radius: 10px;
-object-fit: cover;
-}
-
-#heading2{
-text-align: left;
-}
-
-
-.text-box h2{
-font-size: 42px;
-}
-
-.text-box p{
-font-size: 16px;
-}
-
-.heading{
-font-size: 20px;
-text-align: center;
-}
-
-.sec1{
-width: 33.33%;
-float: left;
-text-align: center;
-padding: 0px 50px;
-margin: 20px;
-}
-
-.sec2{
-width: 33.33%;
-float: right;
-text-align: center;
-padding: 0px 50px;
-margin: 20px;
-}
-
-
-.sec3{
-width: 33.33%;
-float: right;
-text-align: center;
-padding: 0px 50px;
-margin: 20px;
-}
-
-.clients{
-border: 4px solid #e6bd43;
-background-color: #e6bd43;
-}
-
-.container-box {
-flex: 1;
-margin: 10px;
-padding: 20px;
-}
-
-.img-pic{
-width: 80px;
-object-fit: cover;
-height: 100%;
-}
-
-article {
-  text-align: left;
-}
-
-.text-overlay.portfolio{
-  text-align: center;
-}
-
-.technology-img{
- max-width: 100%;
- object-fit: cover;
- opacity: verdi;
- position: relative;
- left: 0;
- top: 0;
- right: 0;
- bottom: 0;
-
-}
-
-
-
-
-
-/* Text overlay styles */
-.text-overlay {
-  font-size: 18px;
-  color: black;
-}
-
-/* Footer styles */
-footer {
-  background-color: black;
-  padding: 20px 5%; /* Adjust padding for smaller screens */
-  text-align: center;
-}
-
-.google-maps {
-  width: 100%; /* Make Google Maps responsive */
+.text-overlay img {
+  width: 100%; /* Make the image responsive */
   height: auto;
-  padding: 15px; /* Adjust padding for smaller screens */
 }
 
-/* Responsive media queries */
-@media only screen and (max-width: 768px) {
-  #grid-container {
-    grid-template-areas: "header" "main" "footer";
-  }
+.headline {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 
-  nav {
+#text-design {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.flex-container {
+  display: flex;
+  padding: 30px; /* Adjust padding as needed */
+  margin-top: 15px;
+}
+
+
+.sec { 
+ padding: 15px;
+}
+
+.fa-solid {
+font-size: 24px; 
+}
+
+h3 {
+ margin-top: 10px; 
+}
+
+p {
+ margin-top: 10px; 
+}
+
+/*Css for sign up for our newspaper -forside*/
+/* Add this style for the container */
+.container-newsletter {
+  background-color: #f2f2f2; /* Light grey background color */
+  padding: 20px;
+  margin: 0; /* Adjust the margin to 0 */
+  height: 20vh; /* Set the height to 20% of the viewport height */
+  box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+
+/* Add this style for the search bar and button */
+.newsletter-form {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.newsletter-form button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.newsletter-form-button:hover{
+  background-color: #333;
+  color: #d4ac3f; 
+}
+
+
+/* Style for the form and input */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid; /* Border color for the input */
+  border-radius: 5px;
+}
+
+/*Portfolio css*/
+.flex-portfolio{
+    background: url('img/portfolio.jpg') center/cover no-repeat; /* Set the background image, center it, cover the whole area, and don't repeat */
+    height: 70vh; /* Set the height to your preference, e.g., 70% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
+    color: #fff; /* Set text color to white or a color that contrasts well with the image */
 }
 
-@media only screen and (max-width: 480px) {
-  .text-box {
-    padding: 10px; /* Further adjust padding for smaller screens */
+/* Change button color on hover */
+
+#services {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+/*css for about company*/
+.flex-company{
+  display: flex;
+  margin: 10px;
+  padding: 30px;
+  align-items: center; 
+  background-color: #d4a82f; 
+}
+
+img {
+max-width: 65%; 
+margin-right: 20px; 
+}
+
+.section {
+flex: 1; 
+margin: left 25px;
+}
+
+#title{
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Adjust the styling as needed */
+
+
+/* Adjust the styling as needed */
+
+
+/* footer button*/
+
+
+/* footer css */
+footer, footer * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for the section within the footer */
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for the logo */
+.logo-footer img {
+  max-width: 100px; /* Adjust the max-width as needed */
+  height: auto;
+}
+
+/* Style for the company copyright text */
+#company-copyright {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Style for the social icons */
+.socials ul {
+  list-style: none;
+  display: flex;
+}
+
+.socials li {
+  margin-right: 10px;
+}
+
+/* Style for the social icons using Font Awesome */
+.socials i {
+  font-size: 20px;
+  color: #fff; /* Color of the social icons */
+}
+
+/* Adjust individual social icon styles as needed */
+.fa-instagram:hover {
+  color: #e6bd43; /* Change color on hover */
+}
+
+.fa-facebook:hover {
+  color: #e6bd43; /* Change color on hover */
+}
+
+.fa-linkin:hover {
+  color: #e6bd43; /* Change color on hover */
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .container-box {
+      flex: 100%; 
   }
 }

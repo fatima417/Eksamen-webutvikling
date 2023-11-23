@@ -11,9 +11,7 @@
         <meta property="og:description" content="company eos et accusamus et iusto odio dignissimos">
         <meta property="og:image" content=""> <!--sett inn en bilde-->
         <!--Other meta data-->
-        <meta name="description" content="Your website description here">
         <script src="https://kit.fontawesome.com/f0cec0541e.js" crossorigin="anonymous"></script>
-        <meta name="description" content="your website description here">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <title>Forside</title>
     </head>
@@ -23,15 +21,15 @@
                 <section class="logo">
                     <img src="css/img/logo1.png"  alt="picture of a logo">
                  </section>
-                <nav class="flex">
+                <nav>
                     <ul>
                         <li class="home"><a href="index.html">Home</a></li>
-                        <li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-                        <li class="about"><a href="about.html">About</a></li>
-                        <li class="contact"><a href="#">Contact</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="button1"><a href="#" class="nav-button">Contact</a></li>
                     </ul>
                 </nav>
-                <section class="flex">
+                <section class="flex-banner">
                     <article class="container">
                         <video autoplay muted loop id="background-video">
                             <source src="css/img/mountains.mp4" type="video/mp4">
@@ -46,70 +44,75 @@
                          lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                        </p>
                        <br>
-                       <button class="color-change-button">Read more about us</button>
+                       <button class="button1">Read more about us</button>
                     </article>
                 </section>    
             </header>
             <main itemscope itemtype="https://schema.org/Product">
-               <section class="flex">
+               <section>
                   <article>
                      <h1 id="engaging-heading">Engaging subheading. What can you help your visitors with</h1>
                      <br>
                      <p id="text">lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                   </article>
                </section>
-               <section class="flex">
-                 <article class="wrapper">
-                     <img class="image-placeholder" src="https://placehold.co/400x400" alt="placeholder picture">
-                 </article>
-                  <section class="text-box">
-                     <h2 id="heading2">About our company</h2>
-                     <br>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                     <br>
-                     <button class="about-button">Read more about us</button>
+               <section class="flex-company">
+                <img src="https://placehold.co/400x400" alt="placeholder dummy used">
+                <article class="section">
+                    <h1 id="title">About our company</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam veniam dignissimos
+                        unde nisi repellendus ex temporibus totam sequi tempore, saepe officia id tenetur rerum pariatur corrupti vel voluptate ipsa!
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                    <button class="button1">Read more about us</button>
+                </article>
+            </section>
+                <div class="flex-container">
+                    <h1 id="services">Our services</h1>
+                    <br>
+                    <section class="container-box">
+                        <article class="sec">
+                            <i class="fa-solid fa-users"></i>
+                            <h3>Branding</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </article>
+                    </section>
+                    <section class="container-box">
+                        <article class="sec">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <h3>Branding</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </article>
+                    </section>
+                    <section class="container-box">
+                        <article class="sec">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Branding</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </article>
+                    </section>
+                    <section class="container-box">
+                        <article class="sec">
+                            <i class="fa-solid fa-wifi"></i>
+                            <h3>Branding</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </article>
+                    </section>
+                </div>
+                <section class="container2">
+                    <article class="flex">
+                      <div class="container-newsletter">
+                        <h2>Sign up for our newsletter</h2>
+                        <form class="newsletter-form" action="/searchbar" method="get">
+                          <input type="text" name="q" placeholder="search">
+                          <button type="submit">Sign me up</button>
+                        </form>
+                      </div>
+                    </article>
                   </section>
-                </section>
-                <section class="container-box">
-                    <article class="sec1">
-                        <i class="fa-solid fa-users"></i>
-                        <h3>Branding</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </article>
-                </section>
-                <section class="container-box">
-                    <article class="sec2">
-                        <i class="fa-solid fa-cloud-arrow-up"></i>
-                        <h3>Branding</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </article>
-                </section>
-            
-                <section class="container-box">
-                    <article class="sec3">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>Branding</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </article>
-                </section>
-            
-                <section class="container-box">
-                    <article class="sec4">
-                        <i class="fa-solid fa-wifi"></i>
-                        <h3>Branding</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </article>
-                </section>
-                <section class="flex">
-                    <h2>Sign up for our newsletter</h2>
-                    <form action="/search bar" method="get">
-                        <input type="text" name="q" placeholder="search">
-                        <button type="submit">Sign me up</button>
-                    </form>
-               </section>
             </main>
             <footer itemprop="copyrightHolder">
-                <section class="flex">
+                <section>
                     <article class="logo-footer">
                         <img src="css/img/logo3.png" class="logo" alt="picture of a logo">
                     </article>
@@ -122,6 +125,7 @@
                         </ul>
                     </article>
                 </section>
-            </footer>
-    </body>
+            </footer> 
+      </div>     
+   </body>
 </html>
