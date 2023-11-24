@@ -2,6 +2,12 @@
 box-sizing: border-box;
 }
 
+#grid-container{
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+}
+
+
 body {
 font-family: Arial, sans-serif;
 background-color:#fff;
@@ -30,36 +36,9 @@ align-items: center;
 justify-content: center;
 height: 100vh; 
 overflow: hidden;
-
 }
 
-.text-overlay {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
-color: black; 
-margin-top: 10%;
-}
   
-.text-overlay h1 {
-font-size: 2em; 
-}
-  
-.text-overlay p {
-font-size: 1.2em; 
-}
-  
-.text-overlay button {
-font-size: 1.5em; 
-padding: 10px 20px;
-background-color: #e6bd43;
-color: black;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
 
 nav {
 text-align: center;
@@ -124,7 +103,7 @@ border-bottom: 2px;
   position: relative;
   height: 70vh; /* Set the height to cover the entire viewport */
   overflow: hidden; /* Hide any overflow beyond the viewport */
-  opacity: 0.5;
+  
 }
 
 .container {
@@ -142,12 +121,75 @@ video {
   width: 100%; /* Make the video cover the entire container */
   height: 100%;
   object-fit: cover; /* Ensure the video maintains its aspect ratio and covers the container */
+  opacity: 0.5;
 }
 
+.text-overlay {
+  position: relative;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black; 
+  margin-top: 15%;
+  }
+    
+  .text-overlay h1 {
+  font-size: 2em; 
+  }
+    
+  .text-overlay p {
+  font-size: 1.2em; 
+  }
 
-.engaging-heading{
-font-size: 70px;
+  .text-overlay button {
+    font-size: 1em; 
+    padding: 10px 20px;
+    background-color: #e6bd43;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .engaging-heading {
+  font-size: 36px; /* Adjust the font size as needed */
+  }
+  
+#text {
+font-size: 18px; /* Adjust the font size as needed */
 }
+
+/*About our company css*/
+.title{
+  font-size: 20px;
+  text-decoration: solid;
+}
+  
+.button-3{
+font-size: 15px;
+padding: 10px 15px;
+display: inline-block;
+margin: 4px 2px;
+text-align: left;
+background-color: white; 
+color: black; 
+border: 2px solid #d4ac3f;
+}
+
+.button-3:hover{
+  background-color: #333;
+  color: #d4ac3f; 
+}
+
+.flex-company{
+  display: flex;
+  margin: 15px;
+  padding: 60px;
+  align-items: center; 
+  background-color: #d4a82f; 
+}
+
 
 .tech-img{
 position: relative;
@@ -212,8 +254,13 @@ text-align: center;
 }
 
 
+#service-header{
+  text-align: center;
+}
+
 .sec { 
  padding: 15px;
+ height: 15px;
 }
 
 .fa-solid {
@@ -228,48 +275,6 @@ p {
  margin-top: 10px; 
 }
 
-/*Css for sign up for our newspaper -forside*/
-/* Add this style for the container */
-.container-newsletter {
-  background-color: #f2f2f2; /* Light grey background color */
-  padding: 20px;
-  margin: 0; /* Adjust the margin to 0 */
-  height: 20vh; /* Set the height to 20% of the viewport height */
-  box-sizing: border-box; /* Include padding in the height calculation */
-}
-
-
-/* Add this style for the search bar and button */
-.newsletter-form {
-  display: flex;
-  align-items: center;
-}
-
-.newsletter-form input {
-  padding: 10px;
-  margin-right: 10px; /* Adjust the margin as needed */
-}
-
-.newsletter-form button {
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.newsletter-form-button:hover{
-  background-color: #333;
-  color: #d4ac3f; 
-}
-
-
-/* Style for the form and input */
 form {
   display: flex;
   justify-content: center;
@@ -283,35 +288,53 @@ input {
   border-radius: 5px;
 }
 
-/*Portfolio css*/
-
-.flex-banner-portfolio {
+/*Portfolio banner css*/
+.banner {
   position: relative;
-  height: 70vh; 
-  overflow: hidden; 
-  opacity: 0.5;
-  object-fit: cover;
+  overflow: hidden;
 }
 
 .container-portfolio {
   position: relative;
-  object-fit: cover;
+  width: 199%;
+  height: 500px; 
+  
 }
 
 .container-portfolio img {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.5;
 }
 
+.text-overlay {
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin: 5%;
+  top: 20%;
+  left: 20%;
+  text-decoration: solid;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black; 
+  font-size: larger;
+}
 
-.buttonss{
-  margin-top: 10px;
-  height: 50px;
+.container-news-section{
+  margin: 20px;
+  padding: 30px;
+}
+
+.banner-heading {
+  font-size: 2em;
 }
 
 /* placeholder pictures css*/
 
-#Branding{
+#Branding-section{
   text-decoration: solid;
   display: block;
   text-align: left;
@@ -320,6 +343,23 @@ input {
  height: 50px;
 }
 
+#design-section{
+  text-decoration: solid;
+  display: block;
+  text-align: left;
+  border-bottom: 2px solid #d4ac3f;
+  margin-top: 8px;
+ height: 50px;
+}
+
+#development-section{
+  text-decoration: solid;
+  display: block;
+  text-align: left;
+  border-bottom: 2px solid #d4ac3f;
+  margin-top: 8px;
+ height: 50px;
+}
 
 .column{
   width: 33.33%;
@@ -341,20 +381,84 @@ input {
 
 .Image{
   width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+.big-img{
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+
+/*css for buttonss*/
+.buttons {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-branding{
+  background-color: white; 
+  color: black; 
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+.button-branding:hover{
+  background-color: #333;
+  color: #d4ac3f; 
+}
+
+.button-design{
+  background-color: white; 
+  color: black; 
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+.button-design:hover{
+  background-color: #333;
+  color: #d4a82f
+}
+
+.button-development{
+  background-color: white; 
+  color: black; 
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+.button-development:hover{
+  background-color: #333;
+  color: #d4a82f
 }
 
 
 
+/* go back to the top button css*/
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: darkgray;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color:#fff;
+  font-size: 22px;
 
-
-/*css for about company*/
-.flex-company{
-  display: flex;
-  margin: 10px;
-  padding: 30px;
-  align-items: center; 
-  background-color: #d4a82f; 
 }
+
 
 img {
 max-width: 65%; 
@@ -370,11 +474,6 @@ margin: left 25px;
   text-align: left;
   margin-top: 20px;
 }
-
-/* Adjust the styling as needed */
-
-
-/* Adjust the styling as needed */
 
 
 /* footer button*/
@@ -443,9 +542,39 @@ footer section {
 }
 
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .container-box {
       flex: 100%; 
   }
+  .flex {
+    height: auto; /* Adjust height for mobile */
+  }
+
+  .text-overlay {
+    margin-top: 5%; /* Adjust margin for mobile */
+  }
+
+  .nav {
+    text-align: center;
+  }
+
+  .nav ul li {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .button1,
+  .nav-button {
+    padding: 8px 15px; /* Adjust padding for mobile */
+  }
+
+  .container-portfolio {
+    height: auto; /* Adjust height for mobile */
+  }
+
+  .flex-banner-portfolio {
+    height: auto; /* Adjust height for mobile */
+  }
 }
+

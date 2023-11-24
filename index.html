@@ -16,6 +16,15 @@
         <title>Forside</title>
     </head>
     <body itemscope itemtype="https://schema.org/WebPage">
+        <script>
+            function scrollToServices() {
+                
+                var servicesSection = document.getElementById('services');
+        
+                
+                servicesSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
         <div id="grid-container">
             <header itemprop="headline">
                 <section class="logo">
@@ -30,45 +39,49 @@
                     </ul>
                 </nav>
                 <section class="flex-banner">
-                    <article class="container">
+                    <article class="container-portfolio">
                         <video autoplay muted loop id="background-video">
                             <source src="css/img/mountains.mp4" type="video/mp4">
                         </video>
+                        <section class="text-overlay">
+                            <h1 class="headline">Compeling headline</h1>
+                            <p id="text-design">
+                             lorem ipsum  dolor sit amet, consectetur adipiscing elit, 
+                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                           </p>
+                          <button class="button1" onclick="scrollToServices()">Read more about us</button>
+                        </section>
                     </article>
                 </section>
-                <section class="section">
-                    <article class="text-overlay">
-                        <h1 class="headline">Compeling headline</h1>
-                        <br>
-                        <p id="text-design">
-                         lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                       </p>
-                       <br>
-                       <button class="button1">Read more about us</button>
-                    </article>
-                </section>    
             </header>
             <main itemscope itemtype="https://schema.org/Product">
-               <section>
-                  <article>
-                     <h1 id="engaging-heading">Engaging subheading. What can you help your visitors with</h1>
-                     <br>
-                     <p id="text">lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                  </article>
-               </section>
+                <section class="flex">
+                    <article>
+                        <h1 id="engaging-headline" class="engaging-heading">Engaging subheading. What can you help your visitors with</h1>
+                        <br>
+                        <p id="text">lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </article>
+                </section>                
                <section class="flex-company">
                 <img src="https://placehold.co/400x400" alt="placeholder dummy used">
                 <article class="section">
                     <h1 id="title">About our company</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam veniam dignissimos
                         unde nisi repellendus ex temporibus totam sequi tempore, saepe officia id tenetur rerum pariatur corrupti vel voluptate ipsa!
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde saepe harum sunt, similique asperiores perferendis molestiae deserunt aliquam laudantium inventore voluptates recusandae, 
+                        a molestias alias quis quia veritatis explicabo debitis.
                     </p>
-                    <button class="button1">Read more about us</button>
+                    <button class="button-3">Read more about us</button>
                 </article>
             </section>
+            <br>
+            <br>
+            <section class="service-header">
+                <h1 id="services">Our Services</h1>
+            </section>
                 <div class="flex-container">
-                    <h1 id="services">Our services</h1>
                     <br>
                     <section class="container-box">
                         <article class="sec">
@@ -99,17 +112,18 @@
                         </article>
                     </section>
                 </div>
-                <section class="container2">
+                <section class="container-news-section">
                     <article class="flex">
-                      <div class="container-newsletter">
-                        <h2>Sign up for our newsletter</h2>
-                        <form class="newsletter-form" action="/searchbar" method="get">
-                          <input type="text" name="q" placeholder="search">
-                          <button type="submit">Sign me up</button>
-                        </form>
-                      </div>
+                        <div>
+                            <h2>Sign up for our newsletter</h2>
+                            <form class="newsletter-form" action="/searchbar" method="get">
+                                <input type="text" name="q" placeholder="search">
+                                <button class="button-3">Sign up</button>
+                            </form>
+                        </div>
                     </article>
-                  </section>
+                </section>
+                
             </main>
             <footer itemprop="copyrightHolder">
                 <section>
@@ -126,6 +140,8 @@
                     </article>
                 </section>
             </footer> 
-      </div>     
+      </div> 
+      <!--Back to the top button--> 
+      <a class="gotopbtn"  href="#"> <i class="fa-solid fa-arrow-up"></i> </a>    
    </body>
 </html>
