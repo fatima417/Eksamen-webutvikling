@@ -70,6 +70,7 @@ font-size: 17px;
 text-decoration: solid;
 margin-bottom: 20px;
 display: inline-block;
+
 }
   
 nav ul {
@@ -283,23 +284,69 @@ input {
 }
 
 /*Portfolio css*/
-.flex-portfolio{
-    background: url('img/portfolio.jpg') center/cover no-repeat; /* Set the background image, center it, cover the whole area, and don't repeat */
-    height: 70vh; /* Set the height to your preference, e.g., 70% of the viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff; /* Set text color to white or a color that contrasts well with the image */
+
+.flex-banner-portfolio {
+  position: relative;
+  height: 70vh; 
+  overflow: hidden; 
+  opacity: 0.5;
+  object-fit: cover;
 }
 
-/* Change button color on hover */
-
-#services {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 10px;
+.container-portfolio {
+  position: relative;
+  object-fit: cover;
 }
+
+.container-portfolio img {
+  width: 100%; 
+  height: auto; 
+}
+
+
+.buttonss{
+  margin-top: 10px;
+  height: 50px;
+}
+
+/* placeholder pictures css*/
+
+#Branding{
+  text-decoration: solid;
+  display: block;
+  text-align: left;
+  border-bottom: 2px solid #d4ac3f;
+  margin-top: 8px;
+ height: 50px;
+}
+
+
+.column{
+  width: 33.33%;
+  padding: 5px;
+  float: left;
+}
+
+.column-1{
+  width: 33.33%;
+  padding: 5px;
+  display: inline-block;
+  margin-right: 15px; /* Adjust the margin as needed */
+}
+
+.row::after{
+  display: table;
+  clear: both;
+}
+
+.Image{
+  width: 100%;
+}
+
+
+
+
+
 /*css for about company*/
 .flex-company{
   display: flex;
