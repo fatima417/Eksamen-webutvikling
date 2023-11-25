@@ -301,6 +301,126 @@ input {
   
 }
 
+.container-about {
+  position: relative;
+  width: 199%;
+  height: 500px; 
+  
+}
+
+/* about side header css*/
+.container-2 {
+  position: relative;
+  width: 199%;
+  height: 500px; 
+  
+}
+
+.banner-2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-2 {
+  position: relative;
+  height: 500px; /* Set the height of the banner */
+  background-image: url('img/macbook3.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+}
+
+/*Some of our clients*/
+.clients{
+background-color: #d4ac3f;
+object-fit: cover;
+width: 600%;
+position: relative;
+
+}
+
+.flex-clients{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 10%;
+  position: relative;
+}
+
+.logo-pic{
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+/*contact*/
+ .contact-info{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightgray;
+  background-size:cover ;
+ }
+
+.contact-info.content{
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact-info.content h2{
+  font-size: 36px;
+  color: #333;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+.text-container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.container-about-section {
+  padding: 20px;
+}
+
+.container-2 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container-2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 .container-portfolio img {
   width: 100%;
   height: 100%;
