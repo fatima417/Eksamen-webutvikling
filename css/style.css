@@ -7,7 +7,6 @@ box-sizing: border-box;
   grid-template-areas: "header" "main" "footer";
 }
 
-
 body {
 font-family: Arial, sans-serif;
 background-color:#fff;
@@ -38,44 +37,47 @@ height: 100vh;
 overflow: hidden;
 }
 
-  
+/* nav menyer css*/
+header nav h3 {
+  float: left;
+}
 
-nav {
-text-align: center;
-padding: 20px;
-text-align: right;
-color: black;
-font-size: 17px;
-text-decoration: solid;
-margin-bottom: 20px;
-display: inline-block;
+header nav ul{
+  float:right;
 
 }
-  
-nav ul {
-padding: 0;
-list-style: none;
+
+header nav ul li{
+  display: inline-block;
+  margin: 0 0.5rem;
 }
-  
-nav ul li {
-margin-right: 15px;
-display: inline-block;
-margin-right: 10px;
-margin-bottom: 10px;
+
+header nav a{
+  color:#000;
+  text-decoration: none;
+  position: relative;
+  padding: 0.5rem;
 }
+
+/*STEG1, LEGGE TIL HOVER EFFEKT*/
+
+/*STEG 2, LEGGE TIL ANIMERT UNDERSTREK*/
+header nav ul li a::before{
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #d4a82f;
+  transform: scaleX(0);
+  transition: transform 1s ease ;
   
-nav ul li a{
-color: black;
-font-size: 17px;
-text-decoration: none;
 }
-  
-.home{
-text-decoration: underline;
-text-decoration-color: #e6bd43;
-text-decoration-thickness: auto;
-font-weight: bold;
-border-bottom: 2px;
+
+header nav ul li a:hover::before{
+  transform: scaleX(100%);
 }
 
 .nav-button {
@@ -89,32 +91,29 @@ border-bottom: 2px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-}
-
-.nav-button:hover {
-  background-color: #333;
-  color: #d4ac3f; 
-}
-
-
+  }
   
+  .nav-button:hover {
+    background-color: #333;
+    color: #d4ac3f; 
+  }
+
 /* mountains.png video css*/
 .flex-banner {
   position: relative;
-  height: 70vh; /* Set the height to cover the entire viewport */
+  height: 80vh; /* Set the height to cover the entire viewport */
   overflow: hidden; /* Hide any overflow beyond the viewport */
-  
 }
 
 .container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 video {
@@ -126,43 +125,64 @@ video {
 
 .text-overlay {
   position: relative;
-  top: 20%;
-  left: 20%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: black; 
   margin-top: 15%;
+  text-wrap: balance;
   }
+
+.headline{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
     
   .text-overlay h1 {
-  font-size: 2em; 
+    font-size: 2em; 
   }
     
   .text-overlay p {
   font-size: 1.2em; 
+  text-wrap: balance;
   }
 
-  .text-overlay button {
-    font-size: 1em; 
-    padding: 10px 20px;
-    background-color: #e6bd43;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.text-overlay button {
+font-size: 1em; 
+padding: 10px 20px;
+background-color: #e6bd43;
+color: black;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
 
-  .engaging-heading {
-  font-size: 36px; /* Adjust the font size as needed */
-  }
+#text-design{
+text-align: center;
+margin-bottom: 20px;
+
+}
+
+/*engaging subheading text*/
+.engaging-heading {
+font-size: 36px; 
+gap: 1rem;
+}
+
+.engaging-headline{
+  gap: 1rem;
+}
   
 #text {
-font-size: 18px; /* Adjust the font size as needed */
+font-size: 18px; 
+text-align: center;
+width: 100%;
+justify-content: center;
+text-wrap: balance;
 }
 
 /*About our company css*/
 .title{
-  font-size: 20px;
+  font-size: 30px;
   text-decoration: solid;
 }
   
@@ -170,6 +190,7 @@ font-size: 18px; /* Adjust the font size as needed */
 font-size: 15px;
 padding: 10px 15px;
 display: inline-block;
+text-decoration: solid;
 margin: 4px 2px;
 text-align: left;
 background-color: white; 
@@ -184,18 +205,14 @@ border: 2px solid #d4ac3f;
 
 .flex-company{
   display: flex;
-  margin: 15px;
-  padding: 60px;
+  margin: 16px;
+  padding: 90px;
   align-items: center; 
   background-color: #d4a82f; 
 }
 
 
-.tech-img{
-position: relative;
-object-fit: cover;
-}
-
+/* buttons css*/
 .button {
   border: none;
   color: white;
@@ -253,9 +270,10 @@ text-align: center;
   margin-top: 15px;
 }
 
-
+/* our services*/
 #service-header{
   text-align: center;
+  gap: 3rem;
 }
 
 .sec { 
@@ -326,78 +344,170 @@ input {
   height: 500px; /* Set the height of the banner */
   background-image: url('img/macbook3.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: right;
   color: white;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: right;
+  align-items: right;
+  justify-content: right;
+  
 }
 
-.overlay-container {
+.overlay-text {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.macbook-pic {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-box {
+  position: relative;
+  display: inline-block;
+  justify-content: right;
+
+}
+
+#aboutus{
+  color: #fff;
+}
+
+#text-color{
+  color: #000;
+}
+
 
 /*Some of our clients*/
-.clients{
-background-color: #d4ac3f;
-object-fit: cover;
-width: 600%;
-position: relative;
-
-}
-
-.flex-clients{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.clients-banner {
   height: 100vh;
-  margin: 10%;
-  position: relative;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  object-fit: cover;
 }
 
-.logo-pic{
+.clients {
+  width: 100%;
+  background-color: #d4ac3f;
+  object-fit: cover; 
+  margin: ;
+}
+
+.clients h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.logo-pic {
   max-width: 100%;
   height: auto;
   margin: 10px;
 }
 
+
 /*contact*/
- .contact-info{
-  position: relative;
-  min-height: 100vh;
-  padding: 50px 100px;
+.container4 {
+  display: flex; 
+  justify-content: space-between; 
+ 
+}
+.form-container {
+  text-align: left;
+  max-width: 400px; /* Adjust the max-width as needed */
+  margin: auto; /* Center the form container */
+}
+
+.form-container label,
+.form-container textarea,
+.form-container input {
+  display: block;
+  margin-bottom: 10px;
+   
+}
+
+
+.button-3 {
+  display: block;
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.box-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: lightgray;
-  background-size:cover ;
- }
-
-.contact-info.content{
-  max-width: 800px;
-  text-align: center;
+  background-color: lightgray; /* Use flexbox to align boxes */
+  text-align: left; /* Align text to the left in the box-container */
 }
 
-.contact-info.content h2{
-  font-size: 36px;
+.box {
+  width: 50%; /* Set the width of each box to allow for some space between them */
+  padding: 27px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+h2 {
   color: #333;
-  font-weight: 500;
+  text-align: left; /* Align h2 text to the left */
+}
+
+form, p {
+  margin-bottom: 16px;
+  text-align: left; /* Align form and p text to the left */
+}
+
+.fa-location-pin,
+.fa-phone,
+.fa-envelope {
+  margin-right: 8px;
 }
 
 
+/* google maps css*/
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+.google-maps {
+  max-height: 200px; /* Adjust the value based on your needs */
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%; /* Adjust this value based on your desired aspect ratio */
+  position: relative;
+  color: #fff; /* Set text color for better contrast */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust this value to bring it closer to the footer */
+}
 
+.google-maps iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
 
+.google-maps h1 {
+  font-size: 2em; /* Adjust font size as needed */
+  margin: 20px 0; /* Add some space around the heading */
+}
 
 
 
@@ -443,17 +553,13 @@ position: relative;
   font-size: larger;
 }
 
-.container-news-section{
-  margin: 20px;
-  padding: 30px;
-}
+/*container news section*/
 
-.banner-heading {
-  font-size: 2em;
-}
+
+
+
 
 /* placeholder pictures css*/
-
 #Branding-section{
   text-decoration: solid;
   display: block;
@@ -462,6 +568,12 @@ position: relative;
   margin-top: 8px;
  height: 50px;
 }
+
+ .column:hover{
+  transform: scale(1.5);
+  z-index:7;
+ }
+
 
 #design-section{
   text-decoration: solid;
@@ -485,6 +597,8 @@ position: relative;
   width: 33.33%;
   padding: 5px;
   float: left;
+  transform: 5s;
+ 
 }
 
 .column-1{
@@ -499,10 +613,17 @@ position: relative;
   clear: both;
 }
 
-.Image{
+.Image
+.big-img{
   width: 100%;
   height: auto;
   max-width: 400px;
+  transition: transform 0.5s ease;
+}
+
+.Image:hover,
+.big-img:hover {
+transform: scale(1.1); /* or any other hover effect you have */
 }
 
 .big-img{
@@ -510,6 +631,9 @@ position: relative;
   height: auto;
   max-width: 800px;
 }
+
+/* navigasjon til forskjellige sider/*
+
 
 /*css for buttonss*/
 .buttons {
@@ -579,7 +703,6 @@ position: relative;
 
 }
 
-
 img {
 max-width: 65%; 
 margin-right: 20px; 
@@ -596,7 +719,6 @@ margin: left 25px;
 }
 
 
-/* footer button*/
 
 
 /* footer css */
@@ -698,3 +820,8 @@ footer section {
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+}

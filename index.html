@@ -28,17 +28,18 @@
         <div id="grid-container">
             <header itemprop="headline">
                 <section class="logo">
-                    <img src="css/img/logo1.png"  alt="picture of a logo">
+                    <a href="index.html">
+                    <img src="css/img/logo1.png" alt="picture of a logo"></a>
                  </section>
                 <nav>
                     <ul>
-                        <li class="home"><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="button1"><a href="#" class="nav-button">Contact</a></li>
+                        <li class="home"><a href="index.html" aria-label="Home">Home</a></li>
+                        <li><a href="portfolio.html" aria-label="Portfolio">Portfolio</a></li>
+                        <li><a href="about.html" aria-label="About">About</a></li>
+                        <li class="button1"><a href="#" class="nav-button" aria-label="Contact">Contact</a></li>
                     </ul>
                 </nav>
-                <section class="flex-banner">
+                <section class="flex-banner" >
                     <article class="container-portfolio">
                         <video autoplay muted loop id="background-video">
                             <source src="css/img/mountains.mp4" type="video/mp4">
@@ -46,9 +47,8 @@
                         <section class="text-overlay">
                             <h1 class="headline">Compeling headline</h1>
                             <p id="text-design">
-                             lorem ipsum  dolor sit amet, consectetur adipiscing elit, 
-                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                           </p>
+                             lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio corrupti culpa beatae aperiam rerum? Fugit voluptatem esse, tempore sunt iste voluptate saepe atque! Consequuntur animi aperiam rem, ad amet ea.
+                            </p>
                           <button class="button1" onclick="scrollToServices()">Read more about us</button>
                         </section>
                     </article>
@@ -59,12 +59,12 @@
                     <article>
                         <h1 id="engaging-headline" class="engaging-heading">Engaging subheading. What can you help your visitors with</h1>
                         <br>
-                        <p id="text">lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <p id="text">lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique et cum ullam cupiditate laboriosam laudantium quidem ipsa autem vitae laborum aspernatur quas odit sed voluptatum magni sequi, error labore quo? "</p>
                     </article>
                 </section>                
                <section class="flex-company">
                 <img src="https://placehold.co/400x400" alt="placeholder dummy used">
-                <article class="section">
+                <article class="section" id="about-us">
                     <h1 id="title">About our company</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam veniam dignissimos
                         unde nisi repellendus ex temporibus totam sequi tempore, saepe officia id tenetur rerum pariatur corrupti vel voluptate ipsa!
@@ -73,10 +73,11 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde saepe harum sunt, similique asperiores perferendis molestiae deserunt aliquam laudantium inventore voluptates recusandae, 
                         a molestias alias quis quia veritatis explicabo debitis.
                     </p>
-                    <button class="button-3">Read more about us</button>
+                    <a href="about.html">
+                        <button class="button-3">Read more about us</button>
+                    </a>
                 </article>
             </section>
-            <br>
             <br>
             <section class="service-header">
                 <h1 id="services">Our Services</h1>
@@ -112,18 +113,17 @@
                         </article>
                     </section>
                 </div>
-                <section class="container-news-section">
+                <section class="section-news">
                     <article class="flex">
-                        <div>
+                        <section class="container-news-section">
                             <h2>Sign up for our newsletter</h2>
                             <form class="newsletter-form" action="/searchbar" method="get">
                                 <input type="text" name="q" placeholder="search">
-                                <button class="button-3">Sign up</button>
+                                <button class="button-3">Sign me up!</button>
                             </form>
-                        </div>
+                        </section>
                     </article>
                 </section>
-                
             </main>
             <footer itemprop="copyrightHolder">
                 <section>

@@ -19,31 +19,30 @@
         <div id="grid-container">
             <header itemprop="headline">
                 <section class="logo">
-                    <img src="css/img/logo1.png"  alt="picture of a logo">
+                    <a href="index.html">
+                        <img src="css/img/logo1.png" alt="picture of a logo"></a>
                </section>
                 <nav>
                     <ul>
-                        <li class="home"><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="button1"><a href="#" class="nav-button">Contact</a></li>
+                        <li class="home"><a href="index.html" aria-label="Home">Home</a></li>
+                        <li><a href="portfolio.html" aria-label="Portfolio">Portfolio</a></li>
+                        <li><a href="about.html" aria-label="About">About</a></li>
+                        <li class="button1"><a href="#" class="nav-button" aria-label="Contact">Contact</a></li>
                     </ul>
                 </nav>
-                    <div class="banner-2">
-                        <section class="overlay-container">
-                            <section class="text-container">
-                                <h3>Company name</h3>
-                                <h2>About us</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius tempora dolores ut, iusto error quis atque fugit quia deserunt praesentium, autem saepe ipsam officiis molestias 
-                                    consequatur laboriosam dolorum? Animi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni illo voluptatibus repellendus excepturi explicabo ipsam, fugiat, nam inventore quae voluptates aliquid minima 
-                                    praesentium ex ad aperiam sequi illum quos! Laboriosam.
-                                </p>
-                                <button class="button-3">Get in touch with us</button>
-                            </section>
-                        </section>
-                    </div>
             </header>
             <main>
+                <div class="banner-2">
+                    <img src="css/img/macbook3.jpg" class="macbook-pic" alt="mackbook picture">
+                    <section class="overlay-text">
+                        <div class="text-container">
+                            <h3 id="text-color">Company name</h3>
+                            <h2 id="text-color">About our company</h2>
+                            <p id="text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione praesentium aut mollitia cumque. Vitae quis sequi, ipsa est, sapiente error totam aliquid, dignissimos quia fugit eius obcaecati libero cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus unde nostrum ipsam hic provident delectus quo exercitationem neque temporibus obcaecati veritatis excepturi voluptas sunt magni dignissimos, aut beatae totam nemo.</p>
+                            <button class="button-3">Get in touch with us</button>
+                        </div>
+                    </section>
+                </div>
                 <section class="service-header">
                     <h1 id="services">Our Services</h1>
                 </section>
@@ -78,75 +77,68 @@
                             </article>
                        </section>
                     </div>
-                <section class="flex-clients">
-                    <article class="clients">
-                        <h1>Some of our clients</h1>
-                        <img src="css/img/logo1.png" class= logo-pic alt="logo picture"> 
-                        <img src="css/img/logo2.png" class= logo-pic alt="logo in the picture">
-                        <img src="css/img/logo3.png" class= logo-pic alt="logo in the picture">
-                    </article>
+                    <section class="clients-banner">
+                        <div class="clients">
+                          <h1>Some of our clients</h1>
+                          <img src="css/img/logo1.png" class="logo-pic" alt="logo in the picture"> 
+                          <img src="css/img/logo2.png" class="logo-pic" alt="logo in the picture">
+                          <img src="css/img/logo3.png" class="logo-pic" alt="logo in the picture">
+                        </div>
+                      </section>                      
+               <section>
+                 <h1 id="contactus">Contact us</h1>
                </section>
-              <section class="contact-info">
-                  <article class="content">
-                     <h2>Contact Us</h2>
-                   </article>
-              </section>
-              <section class="contact-form">
-                 <form>
-                    <h2>Send us a message</h2>
-                    <section class="input-box">
-                        <textarea required="required"></textarea>
-                        <span>Name</span>
+                <section class="container4">
+                    <section class="box-container">
+                        <section class="box" id="container1">
+                            <h3>Send us a message</h3>
+                            <form action="#" method="post">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </form>
+                            <form>
+                                <label for="subject">Subject:</label>
+                                <input type="subject" id="subject" name="subject" required>
+                            </form>
+                            <form>
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </form>
+                              <button class="button-3">Send message</button>
+                            </form>
+                        </section>
+                        <section class="box" id="container2">
+                            <h3>Contact information</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consectetur, omnis doloremque accusantium architecto quisquam similique! Recusandae voluptatibus quod consequuntur! Molestiae est a quas quisquam 
+                              cum commodi rem quibusdam obcaecati?
+                            </p>
+                            <i class="fa-solid fa-location-pin"></i>
+                            <p>
+                                BRA-veien 4,1757 Halden
+                            </p>
+                            <br>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>
+                                69 89 80 00
+                            </p>
+                            <br>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>
+                            <a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a>
+                            </p>
+                        </section>
                     </section>
-                 </form>
-              </section>
-              <section class="input-box">
-                 <input type="text" name="" required="required">
-                 <span>Subject</span>
-              </section>
-              <section class="input-box">
-                 <input type="text" name="" required="required">
-                 <span>Message</span>
-              </section>
-              <section class="input-box">
-                <input type="submit" name="" value="Send message">
-            </section>
-              <section class="container-contact">
-                    <article class="contactInfo">
-                        <article class="box">
-                        <Article class="icon"><i class="fa-solid fa-location-pin"></i>
-                                <article class="text">
-                                    <h3>Adresse</h3>
-                                    <p>BRA Veien 4, 1757 Halden</p>
-                                </article>
-                        </Article>
-                        </article>
-                    </article>
-              </section>
-              <article class="box">
-                    <Article class="icon"><i class="fa-solid fa-phone"></i>
-                        <article class="text">
-                            <h3>Phone</h3>
-                            <p> 69 60 80 00</p>
-                        </article>
-                    </Article>
-              </article>
-              <article class="box">
-                    <Article class="icon"><i class="fa-solid fa-envelope"></i>
-                        <article class="text">
-                            <h3>Email</h3>
-                            <a href="postmottak@hiof.no"></a>
-                        </article>
-                    </Article>
-              </article>
-             
-               <span class="information">  </span>
-             </section>
+                </section>
+                <div class="flex-banner">
+                    <!-- Google Maps section -->
+                    <section class="google-maps">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.210573847434!2d11.349786676554563!3d59.12887717451782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1sen!2sno!4v1701070180484!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
             </main>       
             <footer itemprop="copyrightHolder">
                 <section>
                     <article class="logo-footer">
-                        <img src="css/img/logo3.png" class="logo" alt="picture of a logo">
+                        <img src="css/img/logo1.png" class="logo" alt="picture of a logo">
                     </article>
                     <p id="company-copyright">Company copyright 2023</p>
                     <article class="socials">
