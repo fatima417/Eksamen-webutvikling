@@ -59,9 +59,7 @@ header nav a{
   padding: 0.5rem;
 }
 
-/*STEG1, LEGGE TIL HOVER EFFEKT*/
 
-/*STEG 2, LEGGE TIL ANIMERT UNDERSTREK*/
 header nav ul li a::before{
   content: " ";
   position: absolute;
@@ -77,7 +75,7 @@ header nav ul li a::before{
 }
 
 header nav ul li a:hover::before{
-  transform: scaleX(100%);
+  transform: scale(1.5);
 }
 
 .nav-button {
@@ -101,8 +99,8 @@ header nav ul li a:hover::before{
 /* mountains.png video css*/
 .flex-banner {
   position: relative;
-  height: 80vh; /* Set the height to cover the entire viewport */
-  overflow: hidden; /* Hide any overflow beyond the viewport */
+  height: 80vh; 
+  overflow: hidden; 
 }
 
 .container {
@@ -117,9 +115,9 @@ align-items: center;
 }
 
 video {
-  width: 100%; /* Make the video cover the entire container */
+  width: 100%; 
   height: 100%;
-  object-fit: cover; /* Ensure the video maintains its aspect ratio and covers the container */
+  object-fit: cover; 
   opacity: 0.5;
 }
 
@@ -129,7 +127,7 @@ video {
   text-align: center;
   color: black; 
   margin-top: 15%;
-  text-wrap: balance;
+
   }
 
 .headline{
@@ -143,7 +141,6 @@ video {
     
   .text-overlay p {
   font-size: 1.2em; 
-  text-wrap: balance;
   }
 
 .text-overlay button {
@@ -177,7 +174,6 @@ font-size: 18px;
 text-align: center;
 width: 100%;
 justify-content: center;
-text-wrap: balance;
 }
 
 /*About our company css*/
@@ -196,6 +192,23 @@ text-align: left;
 background-color: white; 
 color: black; 
 border: 2px solid #d4ac3f;
+}
+
+.button-33{
+  font-size: 15px;
+padding: 10px 15px;
+display: inline-block;
+text-decoration: solid;
+margin: 4px 2px;
+text-align: left;
+background-color: white; 
+color: black; 
+border: 2px solid #d4ac3f;
+}
+
+.button-33:hover{
+  background-color: #333;
+  color: #d4ac3f; 
 }
 
 .button-3:hover{
@@ -246,11 +259,11 @@ text-align: center;
 
 /* main css*/
 .section {
-  overflow: hidden; /* Clear the float */
+  overflow: hidden; 
 }
 
 .text-overlay img {
-  width: 100%; /* Make the image responsive */
+  width: 100%; 
   height: auto;
 }
 
@@ -266,7 +279,7 @@ text-align: center;
 
 .flex-container {
   display: flex;
-  padding: 30px; /* Adjust padding as needed */
+  padding: 30px; 
   margin-top: 15px;
 }
 
@@ -302,7 +315,7 @@ form {
 
 input {
   padding: 10px;
-  border: 1px solid; /* Border color for the input */
+  border: 1px solid; 
   border-radius: 5px;
 }
 
@@ -341,14 +354,14 @@ input {
 
 .banner-2 {
   position: relative;
-  height: 500px; /* Set the height of the banner */
+  height: 500px; 
   background-image: url('img/macbook3.jpg');
   background-size: cover;
   background-position: right;
   color: white;
-  text-align: right;
-  align-items: right;
-  justify-content: right;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   
 }
 
@@ -383,6 +396,18 @@ input {
   color: #000;
 }
 
+#text-color-2{
+  color: #000;
+}
+
+#text-color-3{
+  color: #000;
+}
+
+#text-color-4{
+  color: #000;
+}
+
 
 /*Some of our clients*/
 .clients-banner {
@@ -401,7 +426,6 @@ input {
   width: 100%;
   background-color: #d4ac3f;
   object-fit: cover; 
-  margin: ;
 }
 
 .clients h1 {
@@ -416,7 +440,7 @@ input {
 }
 
 
-/*contact*/
+/*contact css*/
 .container4 {
   display: flex; 
   justify-content: space-between; 
@@ -424,8 +448,8 @@ input {
 }
 .form-container {
   text-align: left;
-  max-width: 400px; /* Adjust the max-width as needed */
-  margin: auto; /* Center the form container */
+  max-width: 400px; 
+  margin: auto; 
 }
 
 .form-container label,
@@ -439,17 +463,17 @@ input {
 
 .button-3 {
   display: block;
-  margin-top: 10px; /* Adjust the margin as needed */
+  margin-top: 10px; 
 }
 
 .box-container {
   display: flex;
-  background-color: lightgray; /* Use flexbox to align boxes */
-  text-align: left; /* Align text to the left in the box-container */
+  background-color: lightgray; 
+  text-align: left; 
 }
 
 .box {
-  width: 50%; /* Set the width of each box to allow for some space between them */
+  width: 50%; 
   padding: 27px;
   box-sizing: border-box;
   margin-bottom: 25px;
@@ -457,13 +481,13 @@ input {
 }
 
 h2 {
-  color: #333;
-  text-align: left; /* Align h2 text to the left */
+color: #333;
+text-align: left; 
 }
 
 form, p {
-  margin-bottom: 16px;
-  text-align: left; /* Align form and p text to the left */
+margin-bottom: 16px;
+text-align: left; 
 }
 
 .fa-location-pin,
@@ -475,24 +499,24 @@ form, p {
 
 /* google maps css*/
 .container::after {
-  content: "";
-  display: table;
-  clear: both;
+content: "";
+display: table;
+clear: both;
 }
 
 .google-maps {
-  max-height: 200px; /* Adjust the value based on your needs */
+  max-height: 200px; 
   width: 100%;
   height: 0;
-  padding-bottom: 50%; /* Adjust this value based on your desired aspect ratio */
+  padding-bottom: 50%; 
   position: relative;
-  color: #fff; /* Set text color for better contrast */
+  color: #fff; 
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px; /* Adjust this value to bring it closer to the footer */
+  margin-bottom: 10px; 
 }
 
 .google-maps iframe {
@@ -505,10 +529,9 @@ form, p {
 }
 
 .google-maps h1 {
-  font-size: 2em; /* Adjust font size as needed */
-  margin: 20px 0; /* Add some space around the heading */
+  font-size: 2em; 
+  margin: 20px 0; 
 }
-
 
 
 .text-container {
@@ -553,14 +576,17 @@ form, p {
   font-size: larger;
 }
 
-/*container news section*/
-
-
-
-
-
 /* placeholder pictures css*/
 #Branding-section{
+  text-decoration: solid;
+  display: block;
+  text-align: left;
+  border-bottom: 2px solid #d4ac3f;
+  margin-top: 8px;
+ height: 50px;
+}
+
+#Branding-section2{
   text-decoration: solid;
   display: block;
   text-align: left;
@@ -597,15 +623,13 @@ form, p {
   width: 33.33%;
   padding: 5px;
   float: left;
-  transform: 5s;
- 
 }
 
 .column-1{
   width: 33.33%;
   padding: 5px;
   display: inline-block;
-  margin-right: 15px; /* Adjust the margin as needed */
+  margin-right: 15px; 
 }
 
 .row::after{
@@ -623,7 +647,7 @@ form, p {
 
 .Image:hover,
 .big-img:hover {
-transform: scale(1.1); /* or any other hover effect you have */
+transform: scale(1.1); 
 }
 
 .big-img{
@@ -632,7 +656,7 @@ transform: scale(1.1); /* or any other hover effect you have */
   max-width: 800px;
 }
 
-/* navigasjon til forskjellige sider/*
+
 
 
 /*css for buttonss*/
@@ -699,7 +723,7 @@ transform: scale(1.1); /* or any other hover effect you have */
   text-align: center;
   line-height: 50px;
   color:#fff;
-  font-size: 22px;
+ font-size: 22px;
 
 }
 
@@ -710,15 +734,13 @@ margin-right: 20px;
 
 .section {
 flex: 1; 
-margin: left 25px;
+margin: 25px;
 }
 
 #title{
   text-align: left;
   margin-top: 20px;
 }
-
-
 
 
 /* footer css */
@@ -729,32 +751,28 @@ footer, footer * {
 }
 
 footer {
-  background-color: #333; /* Background color for the footer */
-  color: #fff; /* Text color for the footer */
+  background-color: #333; 
+  color: #fff;
   padding: 20px;
   text-align: center;
 }
 
-/* Style for the section within the footer */
 footer section {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Style for the logo */
 .logo-footer img {
-  max-width: 100px; /* Adjust the max-width as needed */
+  max-width: 100px; 
   height: auto;
 }
 
-/* Style for the company copyright text */
 #company-copyright {
   font-size: 14px;
   margin: 0;
 }
 
-/* Style for the social icons */
 .socials ul {
   list-style: none;
   display: flex;
@@ -764,64 +782,66 @@ footer section {
   margin-right: 10px;
 }
 
-/* Style for the social icons using Font Awesome */
 .socials i {
   font-size: 20px;
-  color: #fff; /* Color of the social icons */
+  color: #fff; 
 }
 
-/* Adjust individual social icon styles as needed */
 .fa-instagram:hover {
-  color: #e6bd43; /* Change color on hover */
+  color: #e6bd43; 
 }
 
 .fa-facebook:hover {
-  color: #e6bd43; /* Change color on hover */
+  color: #e6bd43; 
 }
 
 .fa-linkin:hover {
-  color: #e6bd43; /* Change color on hover */
+  color: #e6bd43; 
 }
 
 
 @media only screen and (max-width: 600px) {
-  .container-box {
-      flex: 100%; 
-  }
-  .flex {
-    height: auto; /* Adjust height for mobile */
-  }
-
-  .text-overlay {
-    margin-top: 5%; /* Adjust margin for mobile */
-  }
-
-  .nav {
-    text-align: center;
-  }
-
-  .nav ul li {
-    display: block;
-    text-align: center;
-    margin-bottom: 5px;
-  }
-
-  .button1,
-  .nav-button {
-    padding: 8px 15px; /* Adjust padding for mobile */
-  }
-
-  .container-portfolio {
-    height: auto; /* Adjust height for mobile */
-  }
-
-  .flex-banner-portfolio {
-    height: auto; /* Adjust height for mobile */
-  }
+.container-box {
+flex: 100%; 
 }
 
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column;
-  }
+.flex {
+height: auto; 
 }
+
+header{
+  background-image: url('whitepic.jpg');
+  background-size: cover;
+}
+
+.button, a{
+  pointer-events: none;
+}
+.text-overlay {
+margin-top: 5%; 
+}
+
+.nav {
+text-align: center;
+}
+
+.nav ul li {
+display: block;
+text-align: center;
+margin-bottom: 5px;
+}
+
+.button1,
+.nav-button {
+padding: 8px 15px; 
+}
+
+.container-portfolio {
+height: auto;
+}
+
+.flex-banner-portfolio {
+height: auto; 
+}
+}
+

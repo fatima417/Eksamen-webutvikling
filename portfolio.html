@@ -9,25 +9,27 @@
         <meta property="og:title" content="company">
         <meta property="og:url" content="https://schema.org/AggregateRating">
         <meta property="og:description" content="company eos et accusamus et iusto odio dignissimos">
-        <meta property="og:image" content=""> <!--sett inn en bilde-->
+        <meta property="og:image" content=""> 
         <!--Other meta data-->
         <script src="https://kit.fontawesome.com/f0cec0541e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <title>Portfolio</title>
     </head>
+    <!--Body html begynner-->
     <body itemscope itemtype="https://schema.org/WebPage">
         <div id="grid-container">
             <header itemprop="headline">
                 <section class="logo">
-                    <a href="index.html">
+                    <a href="index.html" aria-label="Home">
                     <img src="css/img/logo1.png" alt="picture of a logo"></a>
                 </section>
+                <!--Nav section-->
                 <nav>
                     <ul>
-                        <li class="home"><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="button1"><a href="#" class="nav-button">Contact</a></li>
+                        <li class="home"><a href="index.html" aria-label="Home">Home</a></li>
+                        <li><a href="portfolio.html" aria-label="Portfolio">Portfolio</a></li>
+                        <li><a href="about.html" aria-label="About">About</a></li>
+                        <li class="button1"><a href="about.html#contact-us" class="nav-button" aria-label="Contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="banner">
@@ -40,21 +42,22 @@
                 </div>
                 <br>  
                 <section>
-                    <h1 id="Branding-section">Explore previous jobs</h1>
+                    <h1 id="Branding-section" aria-label="Explore previous jobs">Explore previous jobs</h1>
                 </section>
                 <br>
                 <section class="buttonss">
                     <article class="button">
-                        <a href="#branding-section" class="button-branding">Branding</a>
-                        <a href="#design-section" class="button-design">Design</a>
-                        <a href="#development-section" class="button-development">Development</a>
+                        <a href="#branding-section" class="button-branding" aria-label="Navigate to the Branding section">Branding</a>
+                        <a href="#design-section" class="button-design" aria-label="Navigate to Design section">Design</a>
+                        <a href="#development-section" class="button-development" aria-label="Navigate to Development section">Development</a>
                     </article>
                 </section>
                 <br>
             </header>
+            <!--Main html begynner-->
             <main itemscope itemtype="https://schema.org/Product">
                 <section>
-                   <h1 id="Branding-section">Branding</h1>
+                   <h1 id="Branding-section2">Branding</h1>
                 </section>
                  <section class="row">
                     <article class="column">
@@ -105,17 +108,18 @@
                  </article>
                </section>
             </main>
+            <!--Footer html begynner-->
             <footer itemprop="copyrightHolder">
                 <section>
                     <article class="logo-footer">
-                        <img src="css/img/logo3.png" class="logo" alt="picture of a logo">
+                        <img src="css/img/logo1.png" class="logo" alt="picture of a logo">
                     </article>
                     <p id="company-copyright">Company copyright 2023</p>
                     <article class="socials">
                         <ul>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a>
-                            <li><a href="#"><i class="fa-brands fa-linkin"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram" aria-label="Instagram"></i></a>
+                            <li><a href="#"><i class="fa-brands fa-facebook" aria-label="Facebook"></i></a>
+                            <li><a href="#"><i class="fa-brands fa-linkin" aria-label="LinkedIn"></i></a></li>
                         </ul>
                     </article>
                 </section>

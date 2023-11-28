@@ -9,7 +9,7 @@
         <meta property="og:title" content="company">
         <meta property="og:url" content="https://schema.org/AggregateRating">
         <meta property="og:description" content="company eos et accusamus et iusto odio dignissimos">
-        <meta property="og:image" content=""> <!--sett inn en bilde-->
+        <meta property="og:image" content=""> 
         <!--Other meta data-->
         <script src="https://kit.fontawesome.com/f0cec0541e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -19,30 +19,34 @@
         <div id="grid-container">
             <header itemprop="headline">
                 <section class="logo">
-                    <a href="index.html">
+                    <a href="index.html" aria-label="Home">
                         <img src="css/img/logo1.png" alt="picture of a logo"></a>
                </section>
+               <!--Nav seksjonen -->
                 <nav>
                     <ul>
                         <li class="home"><a href="index.html" aria-label="Home">Home</a></li>
                         <li><a href="portfolio.html" aria-label="Portfolio">Portfolio</a></li>
                         <li><a href="about.html" aria-label="About">About</a></li>
-                        <li class="button1"><a href="#" class="nav-button" aria-label="Contact">Contact</a></li>
+                        <li class="button1"><a href="#contact-us" class="nav-button" aria-label="Contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
-            <main>
+            <main  itemscope itemtype="https://schema.org/Product">
+                <!--Main html begynner-->
                 <div class="banner-2">
                     <img src="css/img/macbook3.jpg" class="macbook-pic" alt="mackbook picture">
                     <section class="overlay-text">
                         <div class="text-container">
                             <h3 id="text-color">Company name</h3>
-                            <h2 id="text-color">About our company</h2>
-                            <p id="text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione praesentium aut mollitia cumque. Vitae quis sequi, ipsa est, sapiente error totam aliquid, dignissimos quia fugit eius obcaecati libero cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus unde nostrum ipsam hic provident delectus quo exercitationem neque temporibus obcaecati veritatis excepturi voluptas sunt magni dignissimos, aut beatae totam nemo.</p>
-                            <button class="button-3">Get in touch with us</button>
+                            <h2 id="text-color-2">About our company</h2>
+                            <p id="text-color-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione praesentium aut mollitia cumque. Vitae quis sequi, ipsa est, sapiente error totam aliquid, dignissimos quia fugit eius obcaecati libero cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus unde nostrum ipsam hic provident delectus quo exercitationem neque temporibus obcaecati veritatis excepturi voluptas sunt magni dignissimos, aut beatae totam nemo.</p>
+                            <a href="#contact-us" class="button-33" aria-label="Get in touch with us">Get in touch with us</a>
+
                         </div>
                     </section>
                 </div>
+                <!--Our services section-->
                 <section class="service-header">
                     <h1 id="services">Our Services</h1>
                 </section>
@@ -77,6 +81,7 @@
                             </article>
                        </section>
                     </div>
+                    <!--Some of our clients section-->
                     <section class="clients-banner">
                         <div class="clients">
                           <h1>Some of our clients</h1>
@@ -84,9 +89,10 @@
                           <img src="css/img/logo2.png" class="logo-pic" alt="logo in the picture">
                           <img src="css/img/logo3.png" class="logo-pic" alt="logo in the picture">
                         </div>
-                      </section>                      
-               <section>
-                 <h1 id="contactus">Contact us</h1>
+                    </section>  
+                <!--Contact us section-->              
+               <section id="contact-us">
+                 <h1>Contact us</h1>
                </section>
                 <section class="container4">
                     <section class="box-container">
@@ -94,19 +100,21 @@
                             <h3>Send us a message</h3>
                             <form action="#" method="post">
                                 <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" required>
+                                <input type="text" id="name" name="name">
                             </form>
                             <form>
-                                <label for="subject">Subject:</label>
-                                <input type="subject" id="subject" name="subject" required>
+                                <label for="username">Subject:</label>
+                                <input type="text" id="username" name="username">
                             </form>
                             <form>
                                 <label for="message">Message:</label>
                                 <textarea id="message" name="message" rows="4" required></textarea>
                             </form>
+                            <form>
                               <button class="button-3">Send message</button>
                             </form>
                         </section>
+                        <!--Contact information section-->
                         <section class="box" id="container2">
                             <h3>Contact information</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consectetur, omnis doloremque accusantium architecto quisquam similique! Recusandae voluptatibus quod consequuntur! Molestiae est a quas quisquam 
@@ -133,8 +141,10 @@
                     <!-- Google Maps section -->
                     <section class="google-maps">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.210573847434!2d11.349786676554563!3d59.12887717451782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1sen!2sno!4v1701070180484!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </section>
+                   </section>
+                </div>
             </main>       
+            <!--Footer html begynner-->
             <footer itemprop="copyrightHolder">
                 <section>
                     <article class="logo-footer">
@@ -143,9 +153,9 @@
                     <p id="company-copyright">Company copyright 2023</p>
                     <article class="socials">
                         <ul>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a>
-                            <li><a href="#"><i class="fa-brands fa-linkin"></i></a></li>
+                            <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkin"></i></a></li>
                         </ul>
                     </article>
                 </section>
